@@ -1,0 +1,197 @@
+{
+    "Session-Level Tags": [
+        {
+            "tag": "8",
+            "name": "BeginString",
+            "description": "Identifies FIX version (e.g., FIX.4.4)."
+        },
+        {
+            "tag": "9",
+            "name": "BodyLength",
+            "description": "Length of message body (excl. BeginString & CheckSum)."
+        },
+        {
+            "tag": "35",
+            "name": "MsgType",
+            "description": "Type of message (D=Order, 8=Exec Report, F=Cancel)."
+        },
+        {
+            "tag": "49",
+            "name": "SenderCompID",
+            "description": "Sender identifier."
+        },
+        {
+            "tag": "56",
+            "name": "TargetCompID",
+            "description": "Recipient identifier."
+        },
+        {
+            "tag": "34",
+            "name": "MsgSeqNum",
+            "description": "Sequence number of message."
+        },
+        {
+            "tag": "52",
+            "name": "SendingTime",
+            "description": "Timestamp when message sent."
+        },
+        {
+            "tag": "10",
+            "name": "CheckSum",
+            "description": "3-digit checksum (last tag)."
+        }
+    ],
+    "Order-Related Tags": [
+        {
+            "tag": "11",
+            "name": "ClOrdID",
+            "description": "Unique ID assigned by client for the order."
+        },
+        {
+            "tag": "41",
+            "name": "OrigClOrdID",
+            "description": "Original order ID (used in cancels/amends)."
+        },
+        {
+            "tag": "55",
+            "name": "Symbol",
+            "description": "Instrument/ticker (e.g., AAPL)."
+        },
+        {
+            "tag": "48",
+            "name": "SecurityID",
+            "description": "Alternate instrument ID (ISIN, CUSIP, etc.)."
+        },
+        {
+            "tag": "22",
+            "name": "SecurityIDSource",
+            "description": "Source of SecurityID (4=ISIN)."
+        },
+        {
+            "tag": "54",
+            "name": "Side",
+            "description": "1=Buy, 2=Sell."
+        },
+        {
+            "tag": "38",
+            "name": "OrderQty",
+            "description": "Quantity of shares/contracts."
+        },
+        {
+            "tag": "40",
+            "name": "OrdType",
+            "description": "Order type (1=Market, 2=Limit, 3=Stop)."
+        },
+        {
+            "tag": "44",
+            "name": "Price",
+            "description": "Price for limit orders."
+        },
+        {
+            "tag": "59",
+            "name": "TimeInForce",
+            "description": "Order duration (0=Day, 1=GTC, 3=IOC)."
+        },
+        {
+            "tag": "60",
+            "name": "TransactTime",
+            "description": "Time of transaction/order placement."
+        }
+    ],
+    "Execution Report Tags": [
+        {
+            "tag": "17",
+            "name": "ExecID",
+            "description": "Unique execution ID (from broker/exchange)."
+        },
+        {
+            "tag": "37",
+            "name": "OrderID",
+            "description": "Order ID from broker/exchange."
+        },
+        {
+            "tag": "39",
+            "name": "OrdStatus",
+            "description": "Order status (0=New, 1=PartFill, 2=Filled, 4=Canceled, 8=Rejected)."
+        },
+        {
+            "tag": "150",
+            "name": "ExecType",
+            "description": "Execution type (0=New, 1=Partial, 2=Fill, 4=Cancel)."
+        },
+        {
+            "tag": "151",
+            "name": "LeavesQty",
+            "description": "Remaining quantity."
+        },
+        {
+            "tag": "14",
+            "name": "CumQty",
+            "description": "Total filled quantity."
+        },
+        {
+            "tag": "6",
+            "name": "AvgPx",
+            "description": "Average fill price."
+        },
+        {
+            "tag": "58",
+            "name": "Text",
+            "description": "Free-text message (reason, notes)."
+        }
+    ],
+    "Quote / Pricing Tags": [
+        {
+            "tag": "131",
+            "name": "QuoteReqID",
+            "description": "Quote request identifier."
+        },
+        {
+            "tag": "117",
+            "name": "QuoteID",
+            "description": "Quote identifier."
+        },
+        {
+            "tag": "132",
+            "name": "BidPx",
+            "description": "Bid price."
+        },
+        {
+            "tag": "133",
+            "name": "OfferPx",
+            "description": "Offer price."
+        },
+        {
+            "tag": "134",
+            "name": "BidSize",
+            "description": "Bid quantity."
+        },
+        {
+            "tag": "135",
+            "name": "OfferSize",
+            "description": "Offer quantity."
+        }
+    ],
+    "Trade / Allocation Tags": [
+        {
+            "tag": "31",
+            "name": "LastPx",
+            "description": "Last executed price."
+        },
+        {
+            "tag": "32",
+            "name": "LastQty",
+            "description": "Last executed quantity."
+        },
+        {
+            "tag": "75",
+            "name": "TradeDate",
+            "description": "Trade date."
+        },
+        {
+            "tag": "30",
+            "name": "LastMkt",
+            "description": "Market where trade executed."
+        }
+    ]
+}

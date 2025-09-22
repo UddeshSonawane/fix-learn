@@ -1,0 +1,41 @@
+{
+  "ORD_STATUS_MAP": {
+    "0": "New",
+    "A": "Pending New",
+    "1": "Partially Filled",
+    "2": "Filled",
+    "6": "Pending Cancel",
+    "4": "Cancelled",
+    "5": "Replaced / Restated",
+    "8": "Rejected",
+    "9": "Suspended",
+    "C": "Expired"
+  },
+  "EXEC_TYPE_MAP": {
+    "0": "New",
+    "1": "Partial Fill",
+    "2": "Fill",
+    "3": "Done for Day",
+    "4": "Cancelled",
+    "5": "Replaced",
+    "6": "Pending Cancel",
+    "8": "Rejected",
+    "D": "Accepted for Bidding",
+    "E": "Pending Replace"
+  },
+  "tagDictionary": {
+    "35": "MsgType",
+    "39": "OrdStatus",
+    "150": "ExecType",
+    "55": "Symbol",
+    "54": "Side",
+    "38": "OrderQty",
+    "44": "Price",
+    "11": "ClOrdID",
+    "37": "OrderID",
+    "17": "ExecID",
+    "14": "CumQty",
+    "151": "LeavesQty",
+    "58": "Text"
+  }
+}
